@@ -22,12 +22,14 @@
  <version ClassVersion="10" checksum="3761153883"/>
 </class>
 
-<class name="vlq::Muon" ClassVersion="11">
+<class name="vlq::Muon" ClassVersion="12">
+ <version ClassVersion="12" checksum="218577867"/>
  <version ClassVersion="11" checksum="2866834110"/>
  <version ClassVersion="10" checksum="1991137193"/>
 </class>
 
-<class name="vlq::Jet" ClassVersion="20">
+<class name="vlq::Jet" ClassVersion="21">
+ <version ClassVersion="21" checksum="3696357223"/>
  <version ClassVersion="20" checksum="1753799265"/>
  <version ClassVersion="19" checksum="2561044169"/>
  <version ClassVersion="18" checksum="748711631"/>
