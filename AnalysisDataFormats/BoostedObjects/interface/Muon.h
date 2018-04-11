@@ -37,6 +37,7 @@ namespace vlq{
         IsPFMuon_                (mu.getIsPFMuon                () ), 
         IsSoftMuon_              (mu.getIsSoftMuon              () ), 
         IsTightMuon_             (mu.getIsTightMuon             () ), 
+        IsMediumMuon_             (mu.getIsMediumMuon             () ), 
         IsTrackerMuon_           (mu.getIsTrackerMuon           () ), 
         Iso04_                   (mu.getIso04                   () ), 
         Key_                     (mu.getKey                     () ), 
@@ -77,6 +78,7 @@ namespace vlq{
       float getIsPFMuon                () const { return IsPFMuon_                ; }
       float getIsSoftMuon              () const { return IsSoftMuon_              ; }
       float getIsTightMuon             () const { return IsTightMuon_             ; }
+      float getIsMediumMuon             () const { return IsMediumMuon_             ; }
       float getIsTrackerMuon           () const { return IsTrackerMuon_           ; }
       float getIso04                   () const { return Iso04_                   ; }
       float getKey                     () const { return Key_                     ; }
@@ -115,6 +117,7 @@ namespace vlq{
       void setIsPFMuon                (const float& IsPFMuon)                 { IsPFMuon_ = IsPFMuon                                ; }
       void setIsSoftMuon              (const float& IsSoftMuon)               { IsSoftMuon_ = IsSoftMuon                            ; }
       void setIsTightMuon             (const float& IsTightMuon)              { IsTightMuon_ = IsTightMuon                          ; }
+      void setIsMediumMuon             (const float& IsMediumMuon)              { IsMediumMuon_ = IsMediumMuon                          ; }
       void setIsTrackerMuon           (const float& IsTrackerMuon)            { IsTrackerMuon_ = IsTrackerMuon                      ; }
       void setIso04                   (const float& Iso04)                    { Iso04_ = Iso04                                      ; }
       void setKey                     (const float& Key)                      { Key_ = Key                                          ; }
@@ -155,6 +158,7 @@ namespace vlq{
       float IsPFMuon_                ;
       float IsSoftMuon_              ;
       float IsTightMuon_             ;
+      float IsMediumMuon_             ;
       float IsTrackerMuon_           ;
       float Iso04_                   ;
       float Key_                     ;

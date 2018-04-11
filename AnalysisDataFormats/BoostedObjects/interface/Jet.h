@@ -62,6 +62,8 @@ namespace vlq{
         istoptagged_(0), 
         ishtagged_(0), 
         iswtagged_(0),
+        isleading_(0),
+        is2ndleading_(0),
         genJetP4_(-1000,-1000,-1000,-1000),
         genSubJet0P4_(-1000,-1000,-1000,-1000),
         genSubJet1P4_(-1000,-1000,-1000,-1000)
@@ -113,6 +115,8 @@ namespace vlq{
         istoptagged_(jet.getIstoptagged()),
         ishtagged_(jet.getIshtagged()),
         iswtagged_(jet.getIswtagged()),
+        isleading_(jet.getIsleading()),
+        is2ndleading_(jet.getIs2ndleading()),
         genJetP4_(jet.getGenJetP4()),
         genSubJet0P4_(jet.getGenJetP4()),
         genSubJet1P4_(jet.getGenJetP4())
@@ -164,6 +168,8 @@ namespace vlq{
       bool   getIstoptagged           () const { return istoptagged_ ; }
       bool   getIshtagged             () const { return ishtagged_ ; }
       bool   getIswtagged             () const { return iswtagged_ ; } 
+      bool   getIsleading             () const { return isleading_ ; } 
+      bool   getIs2ndleading          () const { return is2ndleading_ ; } 
       TLorentzVector getGenJetP4      () const { return genJetP4_  ; }
       TLorentzVector getGenSubJet0P4  () const { return genSubJet0P4_  ; }
       TLorentzVector getGenSubJet1P4  () const { return genSubJet1P4_  ; }
@@ -213,6 +219,8 @@ namespace vlq{
       void setIstoptagged           ( const bool   istoptagged         ) { istoptagged_ = istoptagged ; }
       void setIshtagged             ( const bool   ishtagged           ) { ishtagged_ = ishtagged ; }
       void setIswtagged             ( const bool   iswtagged           ) { iswtagged_ = iswtagged ; } 
+      void setIsleading             ( const bool   isleading           ) { isleading_ = isleading ; } 
+      void setIs2ndleading          ( const bool   is2ndleading        ) { is2ndleading_ = is2ndleading ; } 
       void setGenJetP4              ( const TLorentzVector& p4         ) { genJetP4_ = p4 ; }
       void setGenSubJet0P4          ( const TLorentzVector& p4         ) { genSubJet0P4_ = p4 ; }
       void setGenSubJet1P4          ( const TLorentzVector& p4         ) { genSubJet1P4_ = p4 ; }
@@ -268,7 +276,9 @@ namespace vlq{
       bool isbtagged_ ; 
       bool istoptagged_ ;
       bool ishtagged_ ;
-      bool iswtagged_ ; 
+      bool iswtagged_ ;
+      bool isleading_ ;
+      bool is2ndleading_; 
 
       TLorentzVector genJetP4_;
       TLorentzVector genSubJet0P4_;
